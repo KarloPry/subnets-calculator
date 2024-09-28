@@ -6,6 +6,7 @@ import (
 	"calculate-subnets/validators"
 	"fmt"
 	"strings"
+	"time"
 )
 
 type net struct {
@@ -18,6 +19,9 @@ type net struct {
 }
 
 func main () {
+	fmt.Println("\nsubnet-calculator Copyright (C)", time.Now().Year(), "jmacias1503")
+	fmt.Println("This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you") 
+	fmt.Println("are welcome to redistribute it under certain conditions.\n")
 	var currentNet net;
 	fmt.Print("Enter net class: ")
 	fmt.Scan(&currentNet.class)
