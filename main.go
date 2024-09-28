@@ -1,9 +1,9 @@
 package main
 
 import (
-	"calculate-subnets/calculators"
-	"calculate-subnets/parsers"
-	"calculate-subnets/validators"
+	"github.com/jmacias1503/subnets-calculator/calculators"
+	"github.com/jmacias1503/subnets-calculator/parsers"
+	"github.com/jmacias1503/subnets-calculator/validators"
 	"fmt"
 	"strings"
 	"time"
