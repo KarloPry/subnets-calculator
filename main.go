@@ -39,7 +39,7 @@ func main () {
 		fmt.Println("IP address not valid: ", err)
 		return
 	}
-	fmt.Println("Enter the number of subnets: ")
+	fmt.Print("Enter the number of subnets: ")
 	fmt.Scan(&currentNet.numberSubnets)
 	currentNet.mask, err = calculators.CalculateMask(currentNet.class, [4]int(currentNet.ipAddress), currentNet.numberSubnets)
 	if err != nil {
