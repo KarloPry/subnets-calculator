@@ -37,9 +37,9 @@ func main () {
 	}
 	fmt.Println("Enter the number of subnets: ")
 	fmt.Scan(&currentNet.numberSubnets)
-	currentNet.mask, err = calculators.CalculateMask([4]int(currentNet.ipAddress), currentNet.numberSubnets)
+	currentNet.mask, err = calculators.CalculateMask(currentNet.class, [4]int(currentNet.ipAddress), currentNet.numberSubnets)
 	if err != nil {
-		fmt.Println("Error calculating the subnets mask: ", err)
+		fmt.Println("Error calculating the subnet mask: ", err)
 		return
 	}
 	fmt.Println(currentNet.mask)
